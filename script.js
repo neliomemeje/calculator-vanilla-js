@@ -35,7 +35,7 @@ class Calculator {
     this.secondValues= "";
   }
   append(value) {
-    if(this.computation) {
+    if(this.computation || this.computation === 0) {
       if(this.op.includes(value)) {
          this.continue()
       } else {
